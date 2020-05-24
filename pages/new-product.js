@@ -1,15 +1,14 @@
-import Head from "next/head";
 import styled from "@emotion/styled";
 import Layout from "../components/layouts/Layout";
 
 const Heading = styled.h1`
   color: red;
 `;
-export default function Home() {
+export default function NewProduct() {
   return (
     <div>
       <Layout>
-        <Heading>Inicio</Heading>
+        <Heading>New Product</Heading>
       </Layout>
     </div>
   );
