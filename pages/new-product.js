@@ -48,7 +48,11 @@ const NewProduct = () => {
       description,
       rating: 0,
       comments: [],
-      cratedAt: Date.now(),
+      createdAt: Date.now(),
+      createdBy: {
+        id: user.uid,
+        name: user.displayName,
+      },
     };
 
     firebase.db.collection("products").add(product);
