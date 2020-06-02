@@ -46,7 +46,6 @@ const Product = () => {
     url,
     description,
     rating,
-    comments,
     createdAt,
     createdBy,
   } = product;
@@ -92,14 +91,6 @@ const Product = () => {
                   </form>
                 </>
               )}
-
-              <h2>Comments</h2>
-              {comments.map((comment) => {
-                <li>
-                  <p>{comment.name}</p>
-                  <p>Writer by: {comment.user.name}</p>
-                </li>;
-              })}
             </div>
             <aside>
               <Button target="_blanck" bgColor="true" href={url}>
